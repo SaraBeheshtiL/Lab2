@@ -138,14 +138,14 @@ function draw() {
     //eyes
     noStroke();
     fill(0);
-    circle(circleX1 - radius2 / 2, circleY1 - radius2 / 2, 10);
-    circle(circleX1 + radius2 / 2, circleY1 - radius2 / 2, 10);
+    circle(circleX1 - radius1 / 3, circleY1 - radius1 / 3, radius1 / 4);
+    circle(circleX1 + radius1 / 3, circleY1 - radius1 / 3, radius1 / 4);
 
     // smile
     noFill();
     stroke(200, 0, 0);
-    strokeWeight(3);
-    arc(circleX1, circleY1 + 5, 45, 30, 0, PI);
+    strokeWeight(5);
+    arc(circleX1, circleY1 + radius1 / 5, radius1, radius1 / 2, 0, PI);
   }
 }
 //By clicking the ball's speed changes on random number
@@ -170,7 +170,7 @@ function keyPressed() {
   }
   // this means that we pause the ball when we press the space button
 
-  //now we want to pree the space button again to restore the earlier speed back
+  //now we want to push the "r" button  to restore the earlier speed back
   if (key === "r") {
     speedX1 = speedXX1;
     speedY1 = speedYY1;
